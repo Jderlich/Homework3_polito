@@ -61,7 +61,7 @@ class RandomNetworkWithReverseGrad(nn.Module):
             nn.Linear(4096, 4096),
             nn.ReLU(inplace=True),
             nn.Linear(4096, 2),
-            nn.sigmoid(),
+            #nn.sigmoid(),
         )
 
     def forward(self, x, alpha=None):
